@@ -1,10 +1,8 @@
-const express = require('express')
+import express from 'express';
+import { MainRouter } from './routes/index';
 const app = express();
-
-const mainRouter = require('')
-
 app.use(express.json())
-app.use('/api/v1',mainRouter)
+app.use('/api/v1',MainRouter)
 
 app.listen(3000,() => {
     console.log('Server Running')
